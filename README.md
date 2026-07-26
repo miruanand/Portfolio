@@ -135,7 +135,3 @@ I enjoy building practical solutions that combine software and hardware technolo
 This repository contains the source code for my personal portfolio website and is maintained as part of my professional and academic portfolio.
 
 ---
-
-## License
-
-This project is licensed under the **MIT License**.
