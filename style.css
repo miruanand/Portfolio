@@ -439,6 +439,72 @@ main { position: relative; z-index: 2; }
 }
 
 /* ============================================
+   SKILLS & EDUCATION
+   ============================================ */
+.subsection-title {
+  display: flex; align-items: center; gap: 10px;
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  margin-bottom: 18px;
+}
+.skills-edu-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 32px;
+  align-items: start;
+}
+.edu-card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-top: 2px solid var(--copper);
+  border-radius: var(--radius);
+  padding: 26px;
+}
+.edu-card-top {
+  display: flex; justify-content: space-between; align-items: flex-start; gap: 12px;
+  margin-bottom: 10px;
+}
+.edu-card-top h4 { font-family: var(--font-display); font-size: 1.02rem; line-height: 1.4; }
+.edu-cgpa {
+  flex-shrink: 0;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--signal);
+  border: 1px solid var(--signal-dim);
+  border-radius: 999px;
+  padding: 4px 12px;
+  white-space: nowrap;
+}
+.edu-institute { color: var(--text); font-size: 0.92rem; margin-bottom: 4px; }
+.edu-dates { color: var(--text-dim); font-family: var(--font-mono); font-size: 0.8rem; margin-bottom: 18px; }
+.edu-coursework { display: flex; flex-wrap: wrap; gap: 8px; }
+
+.skills-matrix {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-top: 2px solid var(--signal);
+  border-radius: var(--radius);
+  padding: 8px 26px;
+}
+.skills-row {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  gap: 16px;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--line);
+  align-items: center;
+}
+.skills-row:last-child { border-bottom: none; }
+.skills-row-label {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+.skills-row-tags { display: flex; flex-wrap: wrap; gap: 8px; }
+
+/* ============================================
    PROJECTS
    ============================================ */
 .filter-bar { display: flex; gap: 12px; margin-bottom: 40px; flex-wrap: wrap; }
@@ -532,7 +598,8 @@ main { position: relative; z-index: 2; }
   border-top: 2px solid var(--signal);
 }
 .sih-media { position: relative; border-radius: 12px; overflow: hidden; }
-.sih-media img { width: 100%; height: 100%; object-fit: cover; aspect-ratio: 4/3; }
+.sih-media img { width: 100%; height: 100%; object-fit: cover; aspect-ratio: 4/3; cursor: pointer; transition: transform 0.3s ease; }
+.sih-media img:hover { transform: scale(1.03); }
 .sih-badge {
   position: absolute; top: 16px; left: 16px;
   background: var(--ink);
@@ -559,25 +626,29 @@ main { position: relative; z-index: 2; }
    ============================================ */
 .patent-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 24px;
+  gap: 28px;
 }
 .patent-card {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 32px;
   background: var(--surface);
   border: 1px solid var(--line);
   border-top: 2px solid var(--copper);
   border-radius: var(--radius);
-  padding: 28px;
+  padding: 32px;
   position: relative;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
 }
+.patent-card:hover { box-shadow: 0 20px 48px -24px rgba(192,133,82,0.35); }
+.patent-card-media { display: flex; flex-direction: column; gap: 16px; }
 .patent-media {
   border-radius: 8px;
   overflow: hidden;
-  margin-bottom: 20px;
   background: var(--surface-2);
   position: relative;
 }
-.patent-media img { width: 100%; aspect-ratio: 16/10; object-fit: cover; cursor: pointer; transition: transform 0.3s ease; }
+.patent-media img { width: 100%; aspect-ratio: 4/3; object-fit: cover; cursor: pointer; transition: transform 0.3s ease; }
 .patent-media img:hover { transform: scale(1.03); }
 .patent-gallery-arrow {
   position: absolute; top: 50%; transform: translateY(-50%);
@@ -613,18 +684,19 @@ main { position: relative; z-index: 2; }
   border: 1px solid var(--line);
   border-radius: 8px;
   padding: 4px 16px;
-  margin-bottom: 16px;
 }
 .application-details .app-row {
   display: flex; justify-content: space-between; gap: 16px;
   padding: 9px 0;
   border-bottom: 1px solid var(--line);
   font-family: var(--font-mono);
-  font-size: 0.78rem;
+  font-size: 0.76rem;
 }
 .application-details .app-row:last-child { border-bottom: none; }
 .application-details .app-label { color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.03em; }
 .application-details .app-value { color: var(--text); text-align: right; }
+
+.patent-card-body { min-width: 0; }
 .patent-status {
   display: inline-block;
   font-family: var(--font-mono);
@@ -639,9 +711,9 @@ main { position: relative; z-index: 2; }
 .patent-status.filed { color: var(--copper); border: 1px solid var(--copper-dim); }
 .patent-card h3 {
   font-family: var(--font-display);
-  font-size: 1.05rem;
+  font-size: 1.25rem;
   line-height: 1.4;
-  margin-bottom: 10px;
+  margin-bottom: 16px;
 }
 .patent-meta {
   font-family: var(--font-mono);
@@ -649,6 +721,18 @@ main { position: relative; z-index: 2; }
   color: var(--text-dim);
   margin-bottom: 14px;
 }
+.patent-narrative { margin-bottom: 18px; }
+.patent-narrative-block { margin-bottom: 16px; }
+.patent-narrative-block:last-child { margin-bottom: 0; }
+.patent-narrative-block h5 {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--copper);
+  margin-bottom: 6px;
+}
+.patent-narrative-block p { color: var(--text-dim); font-size: 0.92rem; line-height: 1.65; }
 .patent-desc { color: var(--text-dim); font-size: 0.9rem; }
 
 /* ============================================
@@ -688,6 +772,25 @@ main { position: relative; z-index: 2; }
 /* ============================================
    CERTIFICATIONS
    ============================================ */
+.cert-group { margin-bottom: 36px; }
+.cert-group:last-child { margin-bottom: 0; }
+.cert-group-header {
+  display: flex; align-items: baseline; gap: 12px;
+  margin-bottom: 18px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--line);
+}
+.cert-group-title {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  color: var(--text);
+  display: flex; align-items: center; gap: 10px;
+}
+.cert-group-count {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--text-dim);
+}
 .cert-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -823,6 +926,29 @@ main { position: relative; z-index: 2; }
 }
 .doc-item:hover { border-color: var(--signal-dim); }
 .doc-item a { color: var(--signal); }
+.doc-item-actions { display: flex; gap: 14px; flex-shrink: 0; }
+.doc-item-actions button, .doc-item-actions a {
+  background: none; border: none; color: var(--signal);
+  font-family: var(--font-mono); font-size: 0.8rem; cursor: pointer; padding: 0;
+}
+.project-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 10px;
+}
+.project-gallery img {
+  width: 100%; aspect-ratio: 4/3; object-fit: cover;
+  border-radius: 6px; cursor: pointer;
+  border: 1px solid var(--line);
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+.project-gallery img:hover { transform: scale(1.04); border-color: var(--signal-dim); }
+.project-meta-badges { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 10px; }
+.meta-badge {
+  display: inline-flex; align-items: center; gap: 5px;
+  font-family: var(--font-mono); font-size: 0.72rem;
+  color: var(--text-dim);
+}
 .gh-status { color: var(--text-dim); font-size: 0.85rem; font-family: var(--font-mono); display: flex; align-items: center; gap: 10px; }
 .gh-spinner {
   width: 14px; height: 14px;
@@ -900,7 +1026,9 @@ main { position: relative; z-index: 2; }
 @media (max-width: 900px) {
   .hero-grid { grid-template-columns: 1fr; }
   .hero-visual { order: -1; }
-  .skills-split, .project-grid, .patent-grid, .contact-grid, .cert-grid { grid-template-columns: 1fr; }
+  .skills-split, .project-grid, .contact-grid, .cert-grid { grid-template-columns: 1fr; }
+  .patent-card { grid-template-columns: 1fr; }
+  .skills-edu-grid { grid-template-columns: 1fr; }
   .sih-card { grid-template-columns: 1fr; padding: 24px; }
   .hero-stats { grid-template-columns: repeat(2, auto); row-gap: 24px; }
 }
@@ -924,4 +1052,5 @@ main { position: relative; z-index: 2; }
   .modal { max-height: 100vh; height: 100%; border-radius: 0; }
   .cert-frame { height: 60vh; }
   .modal-head { flex-wrap: wrap; }
+  .skills-row { grid-template-columns: 1fr; gap: 8px; }
 }

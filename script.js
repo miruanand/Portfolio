@@ -17,7 +17,16 @@ const projects = [
       "Designed and laid out the custom PCB carrying the sensor front-end and ESP32 module."
     ],
     tags: ["ESP32", "Embedded C", "Firebase", "React Native", "PCB Design"],
-    repo: "https://github.com/miruanand/HealthWatch-One"
+    repo: "https://github.com/miruanand/HealthWatch-One",
+    localImages: [
+      "assets/projects/healthwatch/images/Image_1.png",
+      "assets/projects/healthwatch/images/Image_2.png",
+      "assets/projects/healthwatch/images/Image_3.png",
+      "assets/projects/healthwatch/images/Image_4.png"
+    ],
+    localDocs: [
+      { name: "Project Report", path: "assets/projects/healthwatch/docs/Remote_Health_Monitoring_Report.pdf" }
+    ]
   },
   {
     domain: "hw",
@@ -30,7 +39,16 @@ const projects = [
       "Compared the hybrid design's speed/power profile against a standalone Carry Look-Ahead baseline."
     ],
     tags: ["Verilog HDL", "FPGA", "Quartus", "Digital Design"],
-    repo: "https://github.com/miruanand/12x12-Hybrid-Adder"
+    repo: "https://github.com/miruanand/12x12-Hybrid-Adder",
+    localImages: [
+      "assets/projects/multiplier/images/Image_1.png",
+      "assets/projects/multiplier/images/Image_2.png",
+      "assets/projects/multiplier/images/Image_3.png",
+      "assets/projects/multiplier/images/Image_4.png"
+    ],
+    localDocs: [
+      { name: "Final Report", path: "assets/projects/multiplier/docs/Multiplier_Final_Report.pdf" }
+    ]
   },
   {
     domain: "hw",
@@ -43,7 +61,15 @@ const projects = [
       "Documented failure modes (like leakage-induced state loss) specific to domino logic at ultra-low voltages."
     ],
     tags: ["Cadence Virtuoso", "VLSI", "Low-Power Design", "180nm / 90nm"],
-    repo: "https://github.com/miruanand/Subthreshold-Domino-Logic-VLSI"
+    repo: "https://github.com/miruanand/Subthreshold-Domino-Logic-VLSI",
+    localImages: [
+      "assets/projects/domino/images/Image_1.png",
+      "assets/projects/domino/images/Image_2.png",
+      "assets/projects/domino/images/Image_3.png"
+    ],
+    localDocs: [
+      { name: "Unified Project Report", path: "assets/projects/domino/docs/Domino_Logic_Report.pdf" }
+    ]
   },
   {
     domain: "hw",
@@ -56,7 +82,16 @@ const projects = [
       "Tuned gain staging to keep output within a safe, comfortable listening range."
     ],
     tags: ["PCB Design", "SMD Assembly", "Analog Circuits", "LTspice"],
-    repo: "https://github.com/miruanand/PCB-Based-Hearing-Aid"
+    repo: "https://github.com/miruanand/PCB-Based-Hearing-Aid",
+    localImages: [
+      "assets/projects/hearingaid/images/Image_1.png",
+      "assets/projects/hearingaid/images/Image_2.png",
+      "assets/projects/hearingaid/images/Image_3.png",
+      "assets/projects/hearingaid/images/Image_4.png"
+    ],
+    localDocs: [
+      { name: "Project Report", path: "assets/projects/hearingaid/docs/Hearing_Aid_Report.pdf" }
+    ]
   },
   {
     domain: "sw",
@@ -69,7 +104,15 @@ const projects = [
       "Used Supabase as the backing store for ingested events, agent outputs, and the resulting recommendations."
     ],
     tags: ["Multi-Agent AI", "AIS Tracking", "Supabase", "MPC Optimization"],
-    repo: "https://github.com/miruanand/Energy-Supply-Chain-Resilience"
+    repo: "https://github.com/miruanand/Energy-Supply-Chain-Resilience",
+    localImages: [
+      "assets/projects/energy/images/Image_1.png",
+      "assets/projects/energy/images/Image_2.png",
+      "assets/projects/energy/images/Image_3.png"
+    ],
+    localDocs: [
+      { name: "Team Report", path: "assets/projects/energy/docs/Energy_Supply_Chain_Report.pdf" }
+    ]
   },
   {
     domain: "sw",
@@ -83,7 +126,13 @@ const projects = [
     ],
     tags: ["Raspberry Pi 5", "Computer Vision", "Machine Learning", "Mobile App"],
     badge: "SIH 2025 · Patent Published",
-    repo: "https://github.com/miruanand/AgroBot-ML-Powered-Precision-Agriculture-Robot"
+    repo: "https://github.com/miruanand/AgroBot-ML-Powered-Precision-Agriculture-Robot",
+    localImages: [
+      "assets/projects/agrobot/images/Image_1.png",
+      "assets/projects/agrobot/images/Image_2.png",
+      "assets/projects/agrobot/images/Image_3.png"
+    ],
+    localDocs: []
   },
   {
     domain: "sw",
@@ -97,7 +146,13 @@ const projects = [
     ],
     tags: ["ESP32-S3", "Edge AI", "Sensor Fusion", "IoT"],
     badge: "Patent Published",
-    repo: "https://github.com/miruanand/Maternal-Fetal-Health-Prediction-System"
+    repo: "https://github.com/miruanand/Maternal-Fetal-Health-Prediction-System",
+    localImages: [
+      "assets/projects/maternal/images/Image_1.png",
+      "assets/projects/maternal/images/Image_2.png",
+      "assets/projects/maternal/images/Image_3.png"
+    ],
+    localDocs: []
   },
   {
     domain: "sw",
@@ -110,7 +165,15 @@ const projects = [
       "Used the MPC loop to drive real-time process optimization decisions for the treatment plant."
     ],
     tags: ["Transformer", "ONNX", "Simulink", "MPC"],
-    repo: "https://github.com/miruanand/WWTP-Transformer-MPC"
+    repo: "https://github.com/miruanand/WWTP-Transformer-MPC",
+    localImages: [
+      "assets/projects/wastewater/images/Image_1.png",
+      "assets/projects/wastewater/images/Image_2.jpeg",
+      "assets/projects/wastewater/images/Image_3.jpeg"
+    ],
+    localDocs: [
+      { name: "Project Report", path: "assets/projects/wastewater/docs/Wastewater_Treatment_MPC_Report.pdf" }
+    ]
   }
 ];
 
@@ -130,7 +193,9 @@ const patents = [
     applicationType: "Ordinary Application",
     filingDate: "23/05/2026",
     publicationNo: "23/2026",
-    desc: "Covers the ML-based plant disease detection and precision-targeted spraying mechanism built for AgroBot — a closed-loop system that identifies exactly where treatment is needed and verifies the spray was actually deposited correctly."
+    problem: "Blanket pesticide spraying treats an entire field uniformly even though disease is usually confined to a handful of plants — wasting chemical, raising cost, and increasing environmental runoff.",
+    approach: "The system pairs a camera-driven disease classifier with a targeting mechanism that aims the spray nozzle only at the exact coordinates where disease was detected, then re-images the same spot to confirm the treatment was actually deposited before moving on — closing the loop instead of spraying and hoping.",
+    impact: "It's the core mechanism behind AgroBot (built for Smart India Hackathon 2025), and turns a general precision-agriculture idea into a specific, verifiable claim: detect, target, dispense, and confirm — all in one automated pass over a field."
   },
   {
     images: ["assets/patents/Maternal_fetal.png"],
@@ -142,7 +207,41 @@ const patents = [
     applicationType: "Ordinary Application",
     filingDate: "26/06/2026",
     publicationDate: "03/07/2026",
-    desc: "Covers an edge-AI system for real-time prediction of fetal distress and preterm labour, using wireless multi-sensor fusion processed directly on-device via ESP32-S3 — built to minimize the latency of cloud round-trips in a safety-critical setting."
+    problem: "Fetal distress and preterm labour risk can escalate quickly, but continuous clinical-grade monitoring usually means being tethered to hospital equipment, and cloud-dependent wearables introduce latency that matters in a safety-critical setting.",
+    approach: "Multiple physiological sensors are fused into a single risk score computed directly on an ESP32-S3, so the prediction model runs at the edge instead of waiting on a round-trip to a server — keeping the system responsive even with a poor or absent internet connection.",
+    impact: "The goal is monitoring that's wearable and continuous rather than confined to a clinical visit, giving an earlier warning window for a condition where minutes can matter."
+  }
+];
+
+// ============================================
+// CERTIFICATIONS DATA (grouped)
+// ============================================
+const certGroups = [
+  {
+    name: "Internships & Industry Training",
+    icon: "pad-cu",
+    items: [
+      { path: "assets/certs/Qmax_Test_Equipements.pdf", type: "pdf", title: "Embedded & IC Testing Internship", org: "Qmax Test Equipments Pvt Ltd · 2025" },
+      { path: "assets/certs/HVF_Inplant.pdf", type: "pdf", title: "Inplant Training", org: "Heavy Vehicles Factory, Avadi · Dec 2024–Jan 2025" }
+    ]
+  },
+  {
+    name: "Hackathons & Workshops",
+    icon: "pad-sw",
+    items: [
+      { path: "assets/certs/WEBDEX_Hackathon.jpg", type: "image", title: "WEBDEX Hackathon", org: "Sustainable Development · ACM SC VITC, Mar 2024" },
+      { path: "assets/certs/Vega_Processor.jpg", type: "image", title: "Vega Processors & Ecosystem Workshop", org: "VIT Chennai · Feb–Apr 2025" }
+    ]
+  },
+  {
+    name: "Technical Courses & Certifications",
+    icon: "pad-cu",
+    items: [
+      { path: "assets/certs/ns3.pdf", type: "pdf", title: "ns-3 Network Simulator", org: "Spoken Tutorial, IIT Bombay · Feb 2025" },
+      { path: "assets/certs/Java.pdf", type: "pdf", title: "Java Training", org: "EduPyramids, SINE IIT Bombay · Nov 2025" },
+      { path: "assets/certs/Advanced_CPP.pdf", type: "pdf", title: "Advanced C++ Training", org: "EduPyramids, SINE IIT Bombay · Nov 2025" },
+      { path: "assets/certs/PCB_Design.pdf", type: "pdf", title: "PCB Design with Eagle", org: "Udemy · Jul 2024" }
+    ]
   }
 ];
 
@@ -200,6 +299,8 @@ function openProjectModal(project) {
   }
 
   const bullets = (project.longDesc || [project.desc]).map(l => `<li>${l}</li>`).join("");
+  const hasLocalImages = project.localImages && project.localImages.length > 0;
+  const hasLocalDocs = project.localDocs && project.localDocs.length > 0;
 
   projectModalBody.innerHTML = `
     <div class="project-modal-tags">
@@ -210,6 +311,28 @@ function openProjectModal(project) {
       <h4>What was done</h4>
       <ul class="project-modal-bullets" style="padding-left:20px; color:var(--text-dim); display:flex; flex-direction:column; gap:8px;">${bullets}</ul>
     </div>
+    ${hasLocalImages ? `
+    <div class="project-modal-section">
+      <h4>Project Gallery</h4>
+      <div class="project-gallery">
+        ${project.localImages.map(src => `<img src="${src}" alt="${project.title}">`).join("")}
+      </div>
+    </div>` : ""}
+    ${hasLocalDocs ? `
+    <div class="project-modal-section">
+      <h4>Documents</h4>
+      <div class="doc-list">
+        ${project.localDocs.map(d => `
+          <div class="doc-item">
+            <span>📄 ${d.name}</span>
+            <div class="doc-item-actions">
+              <button class="doc-view-btn" data-path="${d.path}" data-title="${d.name}">View</button>
+              <a href="${d.path}" download>Download</a>
+            </div>
+          </div>
+        `).join("")}
+      </div>
+    </div>` : ""}
     <div class="project-modal-section" id="pmReadmeSection">
       <h4>README (live from GitHub)</h4>
       <div class="gh-status" id="pmReadmeStatus">${gh ? '<span class="gh-spinner"></span> Fetching README…' : ""}</div>
@@ -223,6 +346,15 @@ function openProjectModal(project) {
       <div class="doc-list" id="pmDocsList"></div>
     </div>` : ""}
   `;
+
+  // local image gallery -> full view in the shared viewer modal
+  projectModalBody.querySelectorAll(".project-gallery img").forEach(img => {
+    img.addEventListener("click", () => openCertModal(img.getAttribute("src"), "image", project.title));
+  });
+  // local docs -> view PDF inline in the shared viewer modal
+  projectModalBody.querySelectorAll(".doc-view-btn").forEach(btn => {
+    btn.addEventListener("click", () => openCertModal(btn.dataset.path, "pdf", btn.dataset.title));
+  });
 
   document.body.classList.add("modal-open");
   projectModal.classList.add("open");
@@ -301,12 +433,6 @@ function closeCertModal() {
 document.getElementById("certModalClose").addEventListener("click", closeCertModal);
 certModal.addEventListener("click", (e) => { if (e.target === certModal) closeCertModal(); });
 
-document.querySelectorAll(".cert-card").forEach(btn => {
-  btn.addEventListener("click", () => {
-    openCertModal(btn.dataset.cert, btn.dataset.type, btn.dataset.title);
-  });
-});
-
 // Shared ESC-to-close for both modals
 document.addEventListener("keydown", (e) => {
   if (e.key === "Escape") {
@@ -328,6 +454,13 @@ function renderProjects(filter) {
     card.className = `project-card ${p.domain} reveal reveal-stagger`;
     card.style.setProperty('--stagger-delay', `${(i % 4) * 0.08}s`);
     const domainLabel = p.domain === 'hw' ? 'Hardware' : 'Software / AI';
+    const photoCount = (p.localImages || []).length;
+    const docCount = (p.localDocs || []).length;
+    const metaBadges = (photoCount || docCount) ? `
+      <div class="project-meta-badges">
+        ${photoCount ? `<span class="meta-badge">📷 ${photoCount} photo${photoCount > 1 ? 's' : ''}</span>` : ''}
+        ${docCount ? `<span class="meta-badge">📄 ${docCount} document${docCount > 1 ? 's' : ''}</span>` : ''}
+      </div>` : '';
     card.innerHTML = `
       <div class="project-top">
         <h3>${p.title}</h3>
@@ -338,6 +471,7 @@ function renderProjects(filter) {
         ${p.tags.map(t => `<span class="tag">${t}</span>`).join('')}
         ${p.badge ? `<span class="tag ${p.domain === 'sw' ? 'patent' : 'patent'}">${p.badge}</span>` : ''}
       </div>
+      ${metaBadges}
       ${p.repo ? `<div class="project-links"><a href="${p.repo}" target="_blank" rel="noopener">View Repository ↗</a></div>` : ''}
     `;
     card.addEventListener('click', (e) => {
@@ -380,19 +514,36 @@ function renderPatents() {
     ` : '';
 
     card.innerHTML = `
-      <div class="patent-media">${galleryImgs}${arrows}</div>
-      <span class="patent-status published">${p.status}</span>
-      <h3>${p.title}</h3>
-      <div class="application-details">
-        ${appRow('Application No.', p.applicationNo)}
-        ${appRow('Application Type', p.applicationType)}
-        ${appRow('Date of Filing', p.filingDate)}
-        ${appRow('Applicant', p.applicant)}
-        ${appRow('Field of Invention', p.field)}
-        ${appRow('Publication No.', p.publicationNo)}
-        ${appRow('Publication Date', p.publicationDate)}
+      <div class="patent-card-media">
+        <div class="patent-media">${galleryImgs}${arrows}</div>
+        <div class="application-details">
+          ${appRow('Application No.', p.applicationNo)}
+          ${appRow('Application Type', p.applicationType)}
+          ${appRow('Date of Filing', p.filingDate)}
+          ${appRow('Applicant', p.applicant)}
+          ${appRow('Field of Invention', p.field)}
+          ${appRow('Publication No.', p.publicationNo)}
+          ${appRow('Publication Date', p.publicationDate)}
+        </div>
       </div>
-      <p class="patent-desc">${p.desc}</p>
+      <div class="patent-card-body">
+        <span class="patent-status published">${p.status}</span>
+        <h3>${p.title}</h3>
+        <div class="patent-narrative">
+          <div class="patent-narrative-block">
+            <h5>The Problem</h5>
+            <p>${p.problem}</p>
+          </div>
+          <div class="patent-narrative-block">
+            <h5>The Approach</h5>
+            <p>${p.approach}</p>
+          </div>
+          <div class="patent-narrative-block">
+            <h5>Why It Matters</h5>
+            <p>${p.impact}</p>
+          </div>
+        </div>
+      </div>
     `;
 
     // click any image to open it full-size in the viewer modal
@@ -419,6 +570,41 @@ function renderPatents() {
   });
 }
 renderPatents();
+
+// ============================================
+// RENDER CERTIFICATIONS (grouped)
+// ============================================
+const certGroupsContainer = document.getElementById('certGroups');
+
+function renderCerts() {
+  certGroupsContainer.innerHTML = '';
+  certGroups.forEach((group, gi) => {
+    const groupEl = document.createElement('div');
+    groupEl.className = 'cert-group reveal reveal-stagger';
+    groupEl.style.setProperty('--stagger-delay', `${gi * 0.1}s`);
+    groupEl.innerHTML = `
+      <div class="cert-group-header">
+        <span class="cert-group-title"><span class="pad ${group.icon}"></span>${group.name}</span>
+        <span class="cert-group-count">${group.items.length} item${group.items.length > 1 ? 's' : ''}</span>
+      </div>
+      <div class="cert-grid">
+        ${group.items.map(c => `
+          <button class="cert-card" data-cert="${c.path}" data-type="${c.type}" data-title="${c.title}">
+            <span class="pad ${group.icon}"></span>
+            <div><h4>${c.title}</h4><p>${c.org}</p></div>
+            <span class="cert-view-icon">↗</span>
+          </button>
+        `).join('')}
+      </div>
+    `;
+    groupEl.querySelectorAll('.cert-card').forEach(btn => {
+      btn.addEventListener('click', () => openCertModal(btn.dataset.cert, btn.dataset.type, btn.dataset.title));
+    });
+    certGroupsContainer.appendChild(groupEl);
+    requestAnimationFrame(() => revealObserver.observe(groupEl));
+  });
+}
+renderCerts();
 
 document.querySelectorAll('.filter-chip').forEach(chip => {
   chip.addEventListener('click', () => {
@@ -509,10 +695,19 @@ initRevealGroup('.section-eyebrow');
 initRevealGroup('.section-title');
 initRevealGroup('.skill-panel');
 initRevealGroup('.timeline-item');
-initRevealGroup('.cert-card');
 initRevealGroup('.contact-link');
 initRevealGroup('.sih-card', 0);
 initRevealGroup('.about-text', 0);
+
+// ============================================
+// SIH TEAM PHOTO — click to view full-size
+// ============================================
+const sihTeamImage = document.getElementById('sihTeamImage');
+if (sihTeamImage) {
+  sihTeamImage.addEventListener('click', () => {
+    openCertModal(sihTeamImage.getAttribute('src'), 'image', 'AgroBot team — Smart India Hackathon 2025');
+  });
+}
 
 // ============================================
 // ANIMATED STAT COUNTERS (hero)

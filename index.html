@@ -25,6 +25,7 @@
   </button>
   <div class="nav-links" id="navLinks">
     <a href="#home" data-tab>Home</a>
+    <a href="#skills" data-tab>Skills</a>
     <a href="#work" data-tab>Work</a>
     <a href="#sih" data-tab>SIH'25</a>
     <a href="#patents" data-tab>Patents</a>
@@ -91,7 +92,7 @@
 
 <!-- ============ ABOUT / SKILLS ============ -->
 <section id="about" class="section about">
-  <p class="section-eyebrow"><span class="pad pad-cu"></span>00 — PROFILE</p>
+  <p class="section-eyebrow"><span class="pad pad-cu"></span>PROFILE</p>
   <h2 class="section-title">Two disciplines, one build log.</h2>
   <p class="about-text">
     I'm an Electronics &amp; Computer Engineering student at VIT Chennai, and I move between two
@@ -126,9 +127,77 @@
   </div>
 </section>
 
-<!-- ============ WORK / PROJECTS ============ -->
+<!-- ============ SKILLS & EDUCATION ============ -->
+<section id="skills" class="section skills-edu">
+  <p class="section-eyebrow"><span class="pad pad-sw"></span>SKILLS &amp; EDUCATION</p>
+  <h2 class="section-title">The formal version, for scanning fast.</h2>
+
+  <div class="skills-edu-grid">
+    <div class="edu-col">
+      <h3 class="subsection-title"><span class="pad pad-cu"></span>Education</h3>
+      <div class="edu-card">
+        <div class="edu-card-top">
+          <h4>B.Tech, Electronics &amp; Computer Engineering</h4>
+          <span class="edu-cgpa">8.59 CGPA</span>
+        </div>
+        <p class="edu-institute">Vellore Institute of Technology, Chennai</p>
+        <p class="edu-dates">2023 – 2027 (Expected)</p>
+        <div class="edu-coursework">
+          <span class="tag">Digital &amp; Analog Electronics</span>
+          <span class="tag">VLSI Design</span>
+          <span class="tag">Embedded Systems</span>
+          <span class="tag">Data Structures &amp; Algorithms</span>
+          <span class="tag">Machine Learning</span>
+          <span class="tag">Signal Processing</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="skills-col">
+      <h3 class="subsection-title"><span class="pad pad-sw"></span>Technical Skills</h3>
+      <div class="skills-matrix">
+        <div class="skills-row">
+          <span class="skills-row-label">Languages</span>
+          <div class="skills-row-tags">
+            <span class="tag">Python</span><span class="tag">Java</span><span class="tag">C++</span>
+            <span class="tag">JavaScript</span><span class="tag">TypeScript</span>
+            <span class="tag">Verilog HDL</span><span class="tag">VHDL</span>
+          </div>
+        </div>
+        <div class="skills-row">
+          <span class="skills-row-label">Embedded &amp; Hardware</span>
+          <div class="skills-row-tags">
+            <span class="tag">ESP32 / ESP32-S3</span><span class="tag">Arduino</span>
+            <span class="tag">PCB Design &amp; Layout</span><span class="tag">SMD Assembly</span>
+          </div>
+        </div>
+        <div class="skills-row">
+          <span class="skills-row-label">EDA &amp; Simulation</span>
+          <div class="skills-row-tags">
+            <span class="tag">Cadence Virtuoso</span><span class="tag">LTspice</span>
+            <span class="tag">Quartus (FPGA)</span><span class="tag">MATLAB / Simulink</span>
+          </div>
+        </div>
+        <div class="skills-row">
+          <span class="skills-row-label">AI / ML &amp; Data</span>
+          <div class="skills-row-tags">
+            <span class="tag">Gemini AI · RAG</span><span class="tag">TensorFlow Lite</span>
+            <span class="tag">OpenCV</span><span class="tag">scikit-learn</span>
+          </div>
+        </div>
+        <div class="skills-row">
+          <span class="skills-row-label">Web &amp; Cloud</span>
+          <div class="skills-row-tags">
+            <span class="tag">React</span><span class="tag">Next.js</span><span class="tag">Node.js / Express.js</span>
+            <span class="tag">Firebase / Firestore</span><span class="tag">Supabase</span><span class="tag">MongoDB</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 <section id="work" class="section work">
-  <p class="section-eyebrow"><span class="pad pad-cu"></span>01 — SELECTED WORK</p>
+  <p class="section-eyebrow"><span class="pad pad-cu"></span>SELECTED WORK</p>
   <h2 class="section-title">Eight builds, both sides of the board.</h2>
 
   <div class="filter-bar" role="tablist" aria-label="Filter projects">
@@ -144,10 +213,10 @@
 
 <!-- ============ SIH 2025 TAB ============ -->
 <section id="sih" class="section sih">
-  <p class="section-eyebrow"><span class="pad pad-sw"></span>02 — FEATURED HACKATHON</p>
+  <p class="section-eyebrow"><span class="pad pad-sw"></span>FEATURED HACKATHON</p>
   <div class="sih-card">
     <div class="sih-media">
-      <img src="assets/sih/TEAM_IMAGE.jpg" alt="AgroBot team at Smart India Hackathon 2025" loading="lazy">
+      <img src="assets/sih/TEAM_IMAGE.jpg" alt="AgroBot team at Smart India Hackathon 2025" loading="lazy" id="sihTeamImage">
       <span class="sih-badge">SIH 2025 — SELECTED</span>
     </div>
     <div class="sih-copy">
@@ -182,7 +251,7 @@
 
 <!-- ============ PATENTS TAB ============ -->
 <section id="patents" class="section patents">
-  <p class="section-eyebrow"><span class="pad pad-cu"></span>03 — INTELLECTUAL PROPERTY</p>
+  <p class="section-eyebrow"><span class="pad pad-cu"></span>INTELLECTUAL PROPERTY</p>
   <h2 class="section-title">Two patent applications, two problems worth protecting.</h2>
 
   <div class="patent-grid" id="patentGrid">
@@ -192,7 +261,7 @@
 
 <!-- ============ EXPERIENCE ============ -->
 <section id="experience" class="section experience">
-  <p class="section-eyebrow"><span class="pad pad-sw"></span>04 — WORK EXPERIENCE</p>
+  <p class="section-eyebrow"><span class="pad pad-sw"></span>WORK EXPERIENCE</p>
   <h2 class="section-title">Where the hands-on hours went.</h2>
 
   <div class="timeline">
@@ -230,56 +299,15 @@
 
 <!-- ============ CERTIFICATIONS ============ -->
 <section id="certifications" class="section certifications">
-  <p class="section-eyebrow"><span class="pad pad-cu"></span>05 — CERTIFICATIONS</p>
+  <p class="section-eyebrow"><span class="pad pad-cu"></span>CERTIFICATIONS</p>
   <h2 class="section-title">Training logged along the way.</h2>
 
-  <div class="cert-grid">
-    <button class="cert-card" data-cert="assets/certs/ns3.pdf" data-type="pdf" data-title="ns-3 Network Simulator">
-      <span class="pad pad-sw"></span>
-      <div><h4>ns-3 Network Simulator</h4><p>Spoken Tutorial, IIT Bombay · Feb 2025</p></div>
-      <span class="cert-view-icon">↗</span>
-    </button>
-    <button class="cert-card" data-cert="assets/certs/Java.pdf" data-type="pdf" data-title="Java Training">
-      <span class="pad pad-sw"></span>
-      <div><h4>Java Training</h4><p>EduPyramids, SINE IIT Bombay · Nov 2025</p></div>
-      <span class="cert-view-icon">↗</span>
-    </button>
-    <button class="cert-card" data-cert="assets/certs/Advanced_CPP.pdf" data-type="pdf" data-title="Advanced C++ Training">
-      <span class="pad pad-sw"></span>
-      <div><h4>Advanced C++ Training</h4><p>EduPyramids, SINE IIT Bombay · Nov 2025</p></div>
-      <span class="cert-view-icon">↗</span>
-    </button>
-    <button class="cert-card" data-cert="assets/certs/WEBDEX_Hackathon.jpg" data-type="image" data-title="WEBDEX Hackathon">
-      <span class="pad pad-sw"></span>
-      <div><h4>WEBDEX Hackathon</h4><p>Sustainable Development · ACM SC VITC, Mar 2024</p></div>
-      <span class="cert-view-icon">↗</span>
-    </button>
-    <button class="cert-card" data-cert="assets/certs/Vega_Processor.jpg" data-type="image" data-title="Vega Processors & Ecosystem Workshop">
-      <span class="pad pad-cu"></span>
-      <div><h4>Vega Processors &amp; Ecosystem Workshop</h4><p>VIT Chennai · Feb–Apr 2025</p></div>
-      <span class="cert-view-icon">↗</span>
-    </button>
-    <button class="cert-card" data-cert="assets/certs/PCB_Design.pdf" data-type="pdf" data-title="PCB Design with Eagle">
-      <span class="pad pad-cu"></span>
-      <div><h4>PCB Design with Eagle</h4><p>Udemy · Jul 2024</p></div>
-      <span class="cert-view-icon">↗</span>
-    </button>
-    <button class="cert-card" data-cert="assets/certs/Qmax_Test_Equipements.pdf" data-type="pdf" data-title="Embedded & IC Testing Internship">
-      <span class="pad pad-cu"></span>
-      <div><h4>Embedded &amp; IC Testing Internship</h4><p>Qmax Test Equipments Pvt Ltd · 2025</p></div>
-      <span class="cert-view-icon">↗</span>
-    </button>
-    <button class="cert-card" data-cert="assets/certs/HVF_Inplant.pdf" data-type="pdf" data-title="Inplant Training">
-      <span class="pad pad-cu"></span>
-      <div><h4>Inplant Training</h4><p>Heavy Vehicles Factory, Avadi · Dec 2024–Jan 2025</p></div>
-      <span class="cert-view-icon">↗</span>
-    </button>
-  </div>
+  <div id="certGroups"><!-- populated by JS --></div>
 </section>
 
 <!-- ============ CONTACT ============ -->
 <section id="contact" class="section contact">
-  <p class="section-eyebrow"><span class="pad pad-sw"></span>06 — CONNECT</p>
+  <p class="section-eyebrow"><span class="pad pad-sw"></span>CONNECT</p>
   <h2 class="section-title">Let's talk about what you're building.</h2>
   <p class="contact-sub">Open to internships and full-time roles across embedded systems, VLSI, and AI/software engineering.</p>
   <div class="contact-grid">
