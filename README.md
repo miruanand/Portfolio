@@ -1,45 +1,137 @@
-# Mirunalini A — Portfolio
+# Personal Portfolio Website
 
-A static site. No build step, no framework — just `index.html`, `style.css`, `script.js`, and an `assets/` folder.
+> A responsive personal portfolio website showcasing my projects, technical skills, certifications, patents, resumes, and academic achievements as an Electronics and Computer Science Engineering undergraduate.
 
-## Run it locally
-Open `index.html` directly in a browser, or from this folder run:
+---
+
+## Overview
+
+This portfolio website serves as a central platform to present my academic journey, technical expertise, research work, and software/hardware projects. It highlights my experience across embedded systems, machine learning, web development, VLSI, and IoT while providing easy access to my resumes, certifications, and project portfolio.
+
+The website is designed with a clean, responsive interface to provide recruiters, collaborators, and fellow developers with a comprehensive overview of my work.
+
+---
+
+## Features
+
+- Responsive personal portfolio website
+- Professional introduction and profile
+- Technical skills overview
+- Featured software and hardware projects
+- Research publications and patents
+- Resume download (Software & Hardware)
+- Certifications and achievements
+- Smart India Hackathon (SIH) participation
+- Contact and professional profile links
+- Mobile-friendly design
+
+---
+
+## Technology Stack
+
+| Category | Technologies |
+|----------|--------------|
+| Frontend | HTML5, CSS3, JavaScript |
+| Styling | CSS |
+| Assets | Images, PDF Documents |
+| Deployment | GitHub Pages |
+
+---
+
+## Website Sections
+
+- Home
+- About Me
+- Technical Skills
+- Featured Projects
+- Certifications
+- Patents
+- Resume
+- Smart India Hackathon
+- Contact
+
+---
+
+## Featured Projects
+
+The portfolio showcases projects across multiple domains, including:
+
+- Maternal–Fetal Health Prediction System
+- FlexiSched – Dynamic Class Scheduling System
+- WWTP Transformer Model Predictive Control
+- Radiator Performance Monitoring System
+- Dengue Outbreak Prediction System
+- PCB-Based Hearing Aid
+- Smart Cooktop Conveyor System
+- 12×12 Hybrid Adder
+- Additional embedded systems and machine learning projects
+
+---
+
+## Repository Structure
+
+```text
+Portfolio/
+│
+├── index.html
+├── style.css
+├── script.js
+│
+├── assets/
+│   ├── images/
+│   ├── resumes/
+│   ├── certs/
+│   ├── patents/
+│   └── sih/
+│
+└── README.md
 ```
-python3 -m http.server 8080
-```
-then visit http://localhost:8080
 
-## Deploy on Vercel (recommended)
-1. Create a new GitHub repo and push this whole folder to it.
-2. Go to https://vercel.com → **Add New Project** → import that repo.
-3. Framework preset: **Other** (no build command needed, output directory is `/`).
-4. Click **Deploy**. You'll get a live `.vercel.app` link in under a minute.
+---
 
-After that, updating content (e.g. swapping your resume) is just:
-```
-git add .
-git commit -m "update resume"
-git push
-```
-Vercel auto-redeploys on every push.
+## Highlights
 
-## Deploy on Netlify (alternative)
-Drag-and-drop this whole folder onto https://app.netlify.com/drop — done, no repo required (though connecting a repo is better long-term for the auto-redeploy workflow above).
+- Showcases both Software and Hardware portfolios
+- Organized project presentation with direct repository links
+- Downloadable resumes for different career domains
+- Displays certifications and technical achievements
+- Includes patents, hackathons, and research work
+- Responsive design for desktop and mobile devices
 
-## Folder structure
-```
-index.html
-style.css
-script.js
-assets/
-  images/profile.png
-  resumes/Mirunalini_Hardware_Resume.pdf
-  resumes/Mirunalini_Software_Resume.pdf
-  patents/AgroBot.png
-  patents/Maternal_fetal.png
-  sih/TEAM_IMAGE.jpg
-  certs/*.pdf, *.jpg
-```
+---
 
-## Updating projects
-Project cards are data-driven — open `script.js` and edit the `projects` array at the top. Each entry takes `domain` ("hw" or "sw"), `title`, `desc`, `tags`, an optional `badge`, and an optional `repo` link.
+## Future Enhancements
+
+- Dark mode support
+- Interactive project filtering
+- Blog section for technical articles
+- Project search functionality
+- Visitor analytics dashboard
+- Integrated contact form
+- Animated project showcases
+
+---
+
+## About Me
+
+I am **Mirunalini A**, an undergraduate student pursuing **B.Tech in Electronics and Computer Science Engineering** at **VIT Chennai**. My interests include:
+
+- Artificial Intelligence & Machine Learning
+- Embedded Systems
+- Internet of Things (IoT)
+- VLSI Design
+- FPGA Design
+- Web Development
+- Software Engineering
+
+I enjoy building practical solutions that combine software and hardware technologies to solve real-world problems.
+
+---
+
+## Repository Maintainer
+
+**Mirunalini A**
+
+This repository contains the source code for my personal portfolio website and is maintained as part of my professional and academic portfolio.
+
+---
